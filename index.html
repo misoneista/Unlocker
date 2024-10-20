@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Link</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sblocca il link</h1>
+        <p>Completa le seguenti azioni per sbloccare il link:</p>
+        
+        <ul id="actions">
+            <li>
+                <label><input type="checkbox" id="action1"> Visita il nostro sito principale</label>
+                <button onclick="openSite()">Visita</button>
+            </li>
+            <li>
+                <label><input type="checkbox" id="action2"> Guarda un video promozionale</label>
+                <button onclick="watchVideo()">Guarda</button>
+            </li>
+        </ul>
+
+        <button id="unlockButton" disabled onclick="unlockLink()">Sblocca il link</button>
+
+        <div id="unlockedLink" style="display: none;">
+            <p>Link sbloccato! Vai a <a href="https://www.iltuosito.com" target="_blank">il tuo sito</a>.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
